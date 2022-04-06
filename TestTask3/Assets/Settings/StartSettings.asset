@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StartSettings
   m_EditorClassIdentifier: 
   startPlayerSize: 1
-  minPlayerSize: 0.1
+  minPlayerSize: 0.5
   startBulletSize: 0.1
   bulletSpeed: 5
   obstaclesPower: 0.2

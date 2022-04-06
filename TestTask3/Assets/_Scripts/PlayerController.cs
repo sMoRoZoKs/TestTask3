@@ -37,9 +37,10 @@ public class PlayerController : MonoBehaviour
     }
     private void EndGame(bool isWon)
     {
-        agent.isStopped = isWon;
-        aim?.SetActive(!isWon);
-        wonMenu.SetActive(isWon);
+        agent.isStopped = true;
+        aim?.SetActive(false);
+        if(isWon) wonMenu.SetActive(true);
+        else lostMenu.SetActive(true);
     }
 
 }

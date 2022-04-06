@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
 {
     private bool _inited = false;
     private Action _winEvent;
-    private Action _lostEvent;
     private Settings _settings;
     private float _hp;
     private void FixedUpdate()
@@ -17,12 +16,11 @@ public class Bullet : MonoBehaviour
             transform.position += transform.forward * Time.deltaTime * _settings.bulletSpeed;
         }
     }
-    public void Shot(Action winEvent, Action lostEvent, Settings settings)
+    public void Shot(Action winEvent, Settings settings)
     {
         _hp = transform.localScale.y;
         transform.SetParent(null);
         _settings = settings;
-        _lostEvent = lostEvent;
         _winEvent = winEvent;
         _inited = true;
     }

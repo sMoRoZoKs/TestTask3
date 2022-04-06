@@ -21,9 +21,9 @@ public class Weapoon : MonoBehaviour
 
     public void Init(Action winEvent, Action lostEvent, Settings settings, NavMeshAgent agent)
     {
-        _agent = agent;
         _winEvent = winEvent;
         _lostEvent = lostEvent;
+        _agent = agent;
         SetSettings(settings);
     }
     public void CreateBullet()
@@ -50,7 +50,7 @@ public class Weapoon : MonoBehaviour
             return;
         }
         aim.SetActive(true);
-        if (clip.transform.localScale.y < minPlayerSize) return;
+        if (clip.transform.localScale.y <= minPlayerSize) return;
         Vector3 scale = new Vector3(size, size, size);
         _bullet.transform.localScale += scale;
         clip.gameObject.transform.localScale -= scale;
@@ -58,7 +58,7 @@ public class Weapoon : MonoBehaviour
         _agentScaleForOneStep = _agent.radius / clip.gameObject.transform.localScale.y * size;
         _agent.radius -= _agentScaleForOneStep;
         aim.transform.localScale -= new Vector3(size, size, size); 
-        if (clip.transform.localScale.y < minPlayerSize)
+        if (clip.transform.localScale.y <= minPlayerSize)
         {
             _lostEvent?.Invoke();
         }
@@ -66,7 +66,7 @@ public class Weapoon : MonoBehaviour
     public void Shot()
     {
         aim.SetActive(false);
-        _bullet.Shot(_winEvent, _lostEvent, _settings);
+        _bullet.Shot(_winEvent, _settings);
         _bullet = null;
     }
 }
