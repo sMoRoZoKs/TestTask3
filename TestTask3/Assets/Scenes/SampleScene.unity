@@ -937,10 +937,10 @@ RectTransform:
   m_Father: {fileID: 1569348250}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025558, y: -277}
-  m_SizeDelta: {x: 528.9794, y: 228.2961}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.0025558, y: 431}
+  m_SizeDelta: {x: 528.9794, y: 228.29608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396678940
 MonoBehaviour:
@@ -2753,10 +2753,10 @@ RectTransform:
   m_Father: {fileID: 1280677423}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025558, y: -277}
-  m_SizeDelta: {x: 528.9794, y: 228.2961}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.0025558, y: 431}
+  m_SizeDelta: {x: 528.9794, y: 228.29608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872987310
 MonoBehaviour:
@@ -3536,10 +3536,10 @@ RectTransform:
   m_Father: {fileID: 907705447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002533, y: 0.0086212}
-  m_SizeDelta: {x: 800.01, y: 1420.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0026855469, y: -3.7392578}
+  m_SizeDelta: {x: 0.01, y: 27.119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280677424
 MonoBehaviour:
@@ -4236,10 +4236,10 @@ RectTransform:
   m_Father: {fileID: 907705447}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002533, y: 0.0086212}
-  m_SizeDelta: {x: 800.01, y: 1420.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0026855469, y: -3.7392578}
+  m_SizeDelta: {x: 0.01, y: 27.119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569348251
 MonoBehaviour:
